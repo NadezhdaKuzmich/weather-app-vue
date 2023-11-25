@@ -29,7 +29,6 @@ li {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: #202535;
 }
 
 main {
