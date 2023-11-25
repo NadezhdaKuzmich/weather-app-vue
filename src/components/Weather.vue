@@ -16,9 +16,7 @@
             placeholder="Search..."
             v-model="city"
             @keyup.enter="fetchData" />
-          <button @click="fetchData" class="btn-search">
-            <i class="fa fa-search fa-2x"></i>
-          </button>
+          <button @click="fetchData" class="btn-search">&#9906;</button>
           <span v-if="store.error" class="error">
             You entered the city name incorrectly
           </span>
@@ -146,12 +144,18 @@ export default defineComponent({
 
 .btn-search {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 5px;
+  right: 14px;
+  font-size: 38px;
+  font-weight: 600;
   color: #465175;
   background: none;
   border: none;
   cursor: pointer;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
   transition: color 0.5s ease-in-out;
 }
 
