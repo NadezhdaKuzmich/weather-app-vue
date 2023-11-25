@@ -41,7 +41,7 @@ a {
 }
 
 a:hover {
-  color: #5469ad;
+  color: #344d89;
 }
 
 .header-container {
